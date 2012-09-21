@@ -4,7 +4,7 @@
   <title><![CDATA[Stuff I do.]]></title>
   <link href="http://abishekk92.github.com/atom.xml" rel="self"/>
   <link href="http://abishekk92.github.com/"/>
-  <updated>2012-09-21T01:16:01+05:30</updated>
+  <updated>2012-09-22T04:03:29+05:30</updated>
   <id>http://abishekk92.github.com/</id>
   <author>
     <name><![CDATA[Abishek Bhat]]></name>
@@ -12,5 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hello world!]]></title>
+    <link href="http://abishekk92.github.com/blog/2012/09/22/hello-world/"/>
+    <updated>2012-09-22T03:54:00+05:30</updated>
+    <id>http://abishekk92.github.com/blog/2012/09/22/hello-world</id>
+    <content type="html"><![CDATA[<p>After a long struggle and a lot of convincing myself,I have decided to start bloggin seriously there by documenting the ideas,problems that I come across and how I go about solving them,my perspectives of different things and ofcourse rants.I still haven&#8217;t decided how often I would blog,it is still a debate going on with in me. Blogging as when and I do stuff seems to be a good way to go about it,let us see how that works out.</p>
+
+<p>Let me sign of with those customary two words &#8220;Hello,World!&#8221;</p>
+
+<p>KTHXBAI</p>
+]]></content>
+  </entry>
   
 </feed>
