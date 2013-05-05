@@ -9,7 +9,7 @@
   <meta name="author" content="Abishek Bhat">
 
   
-  <meta name="description" content="I pushed to abishekk92/jarvis . bumped JSON parsing I pushed to abishekk92/jarvis Fixing string params I pushed to abishekk92/jarvis Support for &hellip;">
+  <meta name="description" content="While working on one of my projects, I found myself having to typecast all the elements in a list into their appropriate data type. To give more &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -62,6 +62,65 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/05/05/hierarchial-casting/">Hierarchial Casting</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-05T18:37:00+05:30" pubdate data-updated="true">May 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>While working on one of my projects, I found myself having to typecast all the elements in a list into their appropriate data type. To give more prespective.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">_list</span><span class="o">=</span><span class="p">[</span><span class="s">&quot;1&quot;</span><span class="p">,</span><span class="s">&quot;foo&quot;</span><span class="p">,</span><span class="s">&quot;3.5&quot;</span><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I wanted them to be converted into an <strong>int</strong>,<strong>float</strong> and <strong>string</strong> as opposed to all strings. One of the hacky ways would be to use a regular expression to match the digits and type cast them.</p>
+
+<p>However, It is not elegant and the regular expression may or may not cover all the cases. That set me thinking as to what would the idiomatic way to do such hierarchial casting.</p>
+
+<p>Here is what I did.</p>
+
+<div><script src='https://gist.github.com/4696428.js?file='></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+
+<ul>
+<li>First tries to convert it to int.</li>
+<li>If the attempt to convert to <strong>int</strong> fails then it tries <strong>float</strong>, even if that fails it returns the actual string.</li>
+</ul>
+
+
+<p>It is one of the nicities of python that it allows excepts to be passed, i.e the interpreter simply ignores the exception and moves on to the next instruction.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -384,6 +443,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/05/05/hierarchial-casting/">Hierarchial Casting</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/10/06/devlog-2012-09-29-to-2012-10-06/">Devlog 2012-09-29 to 2012-10-06</a>

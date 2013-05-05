@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Python | Stuff I do.]]></title>
+  <link href="http://abishekk92.github.com/blog/categories/python/atom.xml" rel="self"/>
+  <link href="http://abishekk92.github.com/"/>
+  <updated>2013-05-05T19:12:33+05:30</updated>
+  <id>http://abishekk92.github.com/</id>
+  <author>
+    <name><![CDATA[Abishek Bhat]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hierarchial Casting]]></title>
+    <link href="http://abishekk92.github.com/blog/2013/05/05/hierarchial-casting/"/>
+    <updated>2013-05-05T18:37:00+05:30</updated>
+    <id>http://abishekk92.github.com/blog/2013/05/05/hierarchial-casting</id>
+    <content type="html"><![CDATA[<p>While working on one of my projects, I found myself having to typecast all the elements in a list into their appropriate data type. To give more prespective.</p>
+
+<p>```python</p>
+
+<pre><code>_list=["1","foo","3.5"]
+</code></pre>
+
+<p>```</p>
+
+<p>I wanted them to be converted into an <strong>int</strong>,<strong>float</strong> and <strong>string</strong> as opposed to all strings. One of the hacky ways would be to use a regular expression to match the digits and type cast them.</p>
+
+<p>However, It is not elegant and the regular expression may or may not cover all the cases. That set me thinking as to what would the idiomatic way to do such hierarchial casting.</p>
+
+<p>Here is what I did.</p>
+
+<p><div><script src='https://gist.github.com/4696428.js?file='></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p>
+
+<ul>
+<li>First tries to convert it to int.</li>
+<li>If the attempt to convert to <strong>int</strong> fails then it tries <strong>float</strong>, even if that fails it returns the actual string.</li>
+</ul>
+
+
+<p>It is one of the nicities of python that it allows excepts to be passed, i.e the interpreter simply ignores the exception and moves on to the next instruction.</p>
+]]></content>
+  </entry>
+  
+</feed>

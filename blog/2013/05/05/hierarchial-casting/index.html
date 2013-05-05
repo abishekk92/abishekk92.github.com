@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Box:Get up and Running with Rails - Stuff I do.</title>
+  <title>Hierarchial Casting - Stuff I do.</title>
   <meta name="author" content="Abishek Bhat">
 
   
-  <meta name="description" content="A couple of my friends who are learning to code have been lamenting about how much they had to go through before they could get a proper installation &hellip;">
+  <meta name="description" content="While working on one of my projects, I found myself having to typecast all the elements in a list into their appropriate data type. To give more &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://abishekk92.github.com/blog/2012/09/22/box-get-up-and-running-with-rails/">
+  <link rel="canonical" href="http://abishekk92.github.com/blog/2013/05/05/hierarchial-casting/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -65,7 +65,7 @@
   
   <header>
     
-      <h1 class="entry-title">Box:Get Up and Running With Rails</h1>
+      <h1 class="entry-title">Hierarchial Casting</h1>
     
     
       <p class="meta">
@@ -81,16 +81,37 @@
   
 
 
-<time datetime="2012-09-22T18:48:00+05:30" pubdate data-updated="true">Sep 22<span>nd</span>, 2012</time>
+<time datetime="2013-05-05T18:37:00+05:30" pubdate data-updated="true">May 5<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>A couple of my friends who are learning to code have been lamenting about how much they had to go through before they could get a proper installation of ruby and rails up and running. Though,there are a lot of blog posts or tutorials out there that try to help them,I don&#8217;t see them to be solving the problem. Infact there are packages like <a href="http://www.railsinstaller.org/">Rails installer</a> which litrelly provides an one click installation,however the installers seems only to be available for Mac OS X and Windows.</p>
+<div class="entry-content"><p>While working on one of my projects, I found myself having to typecast all the elements in a list into their appropriate data type. To give more prespective.</p>
 
-<p>Hence,I wrote a quick script which downloads rvm,git,ruby,rails and other dependencies that are required. Let me warn you,it is very rudimentary,feel free to let me know if something didn&#8217;t work or something that I was stupid enough to miss. You can fork/clone <a href="https://github.com/abishekk92/box">Box</a> here.</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">_list</span><span class="o">=</span><span class="p">[</span><span class="s">&quot;1&quot;</span><span class="p">,</span><span class="s">&quot;foo&quot;</span><span class="p">,</span><span class="s">&quot;3.5&quot;</span><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I wanted them to be converted into an <strong>int</strong>,<strong>float</strong> and <strong>string</strong> as opposed to all strings. One of the hacky ways would be to use a regular expression to match the digits and type cast them.</p>
+
+<p>However, It is not elegant and the regular expression may or may not cover all the cases. That set me thinking as to what would the idiomatic way to do such hierarchial casting.</p>
+
+<p>Here is what I did.</p>
+
+<div><script src='https://gist.github.com/4696428.js?file='></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+
+<ul>
+<li>First tries to convert it to int.</li>
+<li>If the attempt to convert to <strong>int</strong> fails then it tries <strong>float</strong>, even if that fails it returns the actual string.</li>
+</ul>
+
+
+<p>It is one of the nicities of python that it allows excepts to be passed, i.e the interpreter simply ignores the exception and moves on to the next instruction.</p>
 </div>
 
 
@@ -113,12 +134,12 @@
   
 
 
-<time datetime="2012-09-22T18:48:00+05:30" pubdate data-updated="true">Sep 22<span>nd</span>, 2012</time>
+<time datetime="2013-05-05T18:37:00+05:30" pubdate data-updated="true">May 5<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/hacks/'>Hacks</a>
+    <a class='category' href='/blog/categories/python/'>Python</a>
   
 </span>
 
@@ -127,7 +148,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://abishekk92.github.com/blog/2012/09/22/box-get-up-and-running-with-rails/" data-via="abishekk92" data-counturl="http://abishekk92.github.com/blog/2012/09/22/box-get-up-and-running-with-rails/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://abishekk92.github.com/blog/2013/05/05/hierarchial-casting/" data-via="abishekk92" data-counturl="http://abishekk92.github.com/blog/2013/05/05/hierarchial-casting/" >Tweet</a>
   
   
   
@@ -136,10 +157,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/09/22/hello-world/" title="Previous Post: Hello world!">&laquo; Hello world!</a>
+        <a class="basic-alignment left" href="/blog/2012/10/06/devlog-2012-09-29-to-2012-10-06/" title="Previous Post: Devlog 2012-09-29 to 2012-10-06">&laquo; Devlog 2012-09-29 to 2012-10-06</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/09/29/devlog-2012-09-22-to-2012-09-29/" title="Next Post: Devlog 2012-09-22 to 2012-09-29">Devlog 2012-09-22 to 2012-09-29 &raquo;</a>
       
     </p>
   </footer>
