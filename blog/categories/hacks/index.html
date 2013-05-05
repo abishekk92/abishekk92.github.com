@@ -101,6 +101,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/10/06/devlog-2012-09-29-to-2012-10-06/">Devlog 2012-09-29 to 2012-10-06</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/09/29/devlog-2012-09-22-to-2012-09-29/">Devlog 2012-09-22 to 2012-09-29</a>
       </li>
     
@@ -161,7 +165,61 @@
 </section>
 
 
+<section>
+  <h1>Coderwall</h1>
+  <ul id="cw_badges">
+    <li class="loading">Status updating...</li>
+  </ul>
 
+  <script type="text/javascript">
+    var coderwall = (function(){
+      function render(options, badges){
+        var fragment = '',
+            t = $(options.target),
+            height = 65,
+            width = 65,
+            index;
+
+        for (index in badges) {
+          fragment += '<a class="cw_badge"title="' + badges[index].description + '" href="http://coderwall.com/' + options.user + '">';
+          fragment +=   '<img alt="' + badges[index].description + '" height="' + width + '" width="' + height + '" src="' + badges[index].badge + '"/>';
+          fragment += '</a>';
+        }
+
+        t.html(fragment);
+      }
+      return {
+        showBadges: function(options){
+          $.ajax({
+              url: 'http://coderwall.com/' + options.user + '.json?callback=?'
+            , dataType: 'jsonp'
+            , error: function (err) { $(options.target + ' li.loading').addClass('error').text("Error loading feed"); }
+            , success: function(res) {
+                render(options, res.data.badges);
+            }
+          });
+        }
+      };
+    })();
+
+    $(document).ready(function(){
+      coderwall.showBadges({
+        user: 'abishekk92',
+        target: '#cw_badges'
+      });
+    });
+  </script>
+  <style type="text/css">
+    .cw_badge img {
+      padding: 5px;
+      border: 0 none !important;
+      -moz-box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      -o-box-shadow: none !important;
+      box-shadow: none !important;
+    }
+  </style>
+</section>
 
 
   
@@ -171,7 +229,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Abishek Bhat -
+  Copyright &copy; 2013 - Abishek Bhat -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

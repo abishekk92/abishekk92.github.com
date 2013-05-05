@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://abishekk92.github.com/blog/2012/09/22/hello-world/</loc>
-        <lastmod>2012-09-29T04:11:48+05:30</lastmod>
+        <lastmod>2013-05-05T12:05:43+05:30</lastmod>
     </url>
     <url>
         <loc>http://abishekk92.github.com/blog/2012/09/22/box-get-up-and-running-with-rails/</loc>
@@ -13,11 +13,15 @@
         <lastmod>2012-09-29T04:48:37+05:30</lastmod>
     </url>
     <url>
+        <loc>http://abishekk92.github.com/blog/2012/10/06/devlog-2012-09-29-to-2012-10-06/</loc>
+        <lastmod>2012-10-06T14:15:59+05:30</lastmod>
+    </url>
+    <url>
         <loc>http://abishekk92.github.com/</loc>
-        <lastmod>2012-09-29T04:48:37+05:30</lastmod>
+        <lastmod>2013-05-05T12:05:43+05:30</lastmod>
     </url>
     <url>
         <loc>http://abishekk92.github.com/blog/archives/</loc>
-        <lastmod>2012-09-29T04:48:37+05:30</lastmod>
+        <lastmod>2013-05-05T12:05:43+05:30</lastmod>
     </url>
 </urlset>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: devlog | Stuff I do.]]></title>
   <link href="http://abishekk92.github.com/blog/categories/devlog/atom.xml" rel="self"/>
   <link href="http://abishekk92.github.com/"/>
-  <updated>2012-09-29T04:49:36+05:30</updated>
+  <updated>2013-05-05T18:26:05+05:30</updated>
   <id>http://abishekk92.github.com/</id>
   <author>
     <name><![CDATA[Abishek Bhat]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Devlog 2012-09-29 to 2012-10-06]]></title>
+    <link href="http://abishekk92.github.com/blog/2012/10/06/devlog-2012-09-29-to-2012-10-06/"/>
+    <updated>2012-10-06T14:15:00+05:30</updated>
+    <id>http://abishekk92.github.com/blog/2012/10/06/devlog-2012-09-29-to-2012-10-06</id>
+    <content type="html"><![CDATA[<ul>
+<li>I pushed to <a href="https://github.com/#{repo_name}">abishekk92/jarvis</a>
+
+<ul>
+<li><a href="https://api.github.com/repos/abishekk92/jarvis/commits/ca970e97a27c24e7bda30583e97c1890f4401ed0">. bumped JSON parsing</a></li>
+</ul>
+</li>
+<li>I pushed to <a href="https://github.com/#{repo_name}">abishekk92/jarvis</a>
+
+<ul>
+<li><a href="https://api.github.com/repos/abishekk92/jarvis/commits/c81f89d49e9a4cdde7f4840e37dd14c2b165240c">Fixing string params</a></li>
+</ul>
+</li>
+<li>I pushed to <a href="https://github.com/#{repo_name}">abishekk92/jarvis</a>
+
+<ul>
+<li><a href="https://api.github.com/repos/abishekk92/jarvis/commits/344e5f1673c470e67dd28f956085a7534f5a3451">Support for Text-Processing API</a></li>
+</ul>
+</li>
+<li>I pushed to <a href="https://github.com/#{repo_name}">abishekk92/jarvis</a>
+
+<ul>
+<li><a href="https://api.github.com/repos/abishekk92/jarvis/commits/9fb9697ed6d73c5974330e43556c08ae99edb8d4">Path fix</a></li>
+</ul>
+</li>
+<li>I pushed to <a href="https://github.com/#{repo_name}">abishekk92/jarvis</a>
+
+<ul>
+<li><a href="https://api.github.com/repos/abishekk92/jarvis/commits/4c711fbce02fffe6ded15753f6ffa557f7f29ae4">Prune unnecessary file and fix path in index.erb</a></li>
+</ul>
+</li>
+<li>I started working on <a href="https://github.com/#{repo_name}">abishekk92/jarvis</a></li>
+<li>I started working on <a href="https://github.com/#{repo_name}">abishekk92/jarvis</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Devlog 2012-09-22 to 2012-09-29]]></title>
