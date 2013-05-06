@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Python - Stuff I do.</title>
+  <title>Which one do you think is more readable? - Stuff I do.</title>
   <meta name="author" content="Abishek Bhat">
 
   
-  <meta name="description" content="Category: Python">
+  <meta name="description" content="While randomly chatting with my friend, we started fighting on Ruby&#8217;s syntax and how readable it is. I, ofcourse, was defending Ruby to be the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://abishekk92.github.comblog/categories/python/">
+  <link rel="canonical" href="http://abishekk92.github.com/blog/2013/05/05/which-one-do-you-think-is-more-readable/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -61,35 +61,108 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Python</h1>
+    
+      <h1 class="entry-title">Which One Do You Think Is More Readable?</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-05T19:27:00+05:30" pubdate data-updated="true">May 5<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
+
+
+<div class="entry-content"><p>While randomly chatting with my friend, we started fighting on Ruby&#8217;s syntax and how readable it is. I, ofcourse, was defending Ruby to be the most readable.</p>
+
+<p>I&#8217;ve been writing Ruby and Python equally for a good amount of time and have started exploring Scala and pure functional languages like Haskell.</p>
+
+<p>Anyways, which of the following do you think is the most readable?</p>
+
+<div><script src='https://gist.github.com/5163936.js?file=map.rb'></script>
+<noscript><pre><code>(1..100).map{|i| i**2}</code></pre></noscript></div>
 
 
 
-  
-  <h2>2013</h2>
 
-<article>
-  
-<h1><a href="/blog/2013/05/05/hierarchial-casting/">Hierarchial Casting</a></h1>
-<time datetime="2013-05-05T18:37:00+05:30" pubdate><span class='month'>May</span> <span class='day'>05</span> <span class='year'>2013</span></time>
+<div><script src='https://gist.github.com/5163936.js?file=map.py'></script>
+<noscript><pre><code>[i**2 for i in range(1,100)]
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/python/'>Python</a></span>
-</footer>
+map(lambda x: x**2,list(range(1,100)))</code></pre></noscript></div>
 
 
-</article>
 
+
+<div><script src='https://gist.github.com/5163936.js?file=map.hs'></script>
+<noscript><pre><code>[x^2|x&lt;-[1..100]]</code></pre></noscript></div>
+
+
+<p>My personal take would be something like Ruby> Scala > Python == Haskell.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Abishek Bhat</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-05T19:27:00+05:30" pubdate data-updated="true">May 5<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/language/'>Language</a>, <a class='category' href='/blog/categories/languages-/'>Languages,</a>, <a class='category' href='/blog/categories/programming/'>Programming</a>, <a class='category' href='/blog/categories/wars/'>wars</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://abishekk92.github.com/blog/2013/05/05/which-one-do-you-think-is-more-readable/" data-via="abishekk92" data-counturl="http://abishekk92.github.com/blog/2013/05/05/which-one-do-you-think-is-more-readable/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/05/05/hierarchial-casting/" title="Previous Post: Hierarchial Casting">&laquo; Hierarchial Casting</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

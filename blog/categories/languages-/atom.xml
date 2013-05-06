@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Languages, | Stuff I do.]]></title>
+  <link href="http://abishekk92.github.com/blog/categories/languages-/atom.xml" rel="self"/>
+  <link href="http://abishekk92.github.com/"/>
+  <updated>2013-05-06T06:19:18+05:30</updated>
+  <id>http://abishekk92.github.com/</id>
+  <author>
+    <name><![CDATA[Abishek Bhat]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Which one do you think is more readable?]]></title>
+    <link href="http://abishekk92.github.com/blog/2013/05/05/which-one-do-you-think-is-more-readable/"/>
+    <updated>2013-05-05T19:27:00+05:30</updated>
+    <id>http://abishekk92.github.com/blog/2013/05/05/which-one-do-you-think-is-more-readable</id>
+    <content type="html"><![CDATA[<p>While randomly chatting with my friend, we started fighting on Ruby's syntax and how readable it is. I, ofcourse, was defending Ruby to be the most readable.</p>
+
+<p>I've been writing Ruby and Python equally for a good amount of time and have started exploring Scala and pure functional languages like Haskell.</p>
+
+<p>Anyways, which of the following do you think is the most readable?</p>
+
+<p><div><script src='https://gist.github.com/5163936.js?file=map.rb'></script>
+<noscript><pre><code>(1..100).map{|i| i**2}</code></pre></noscript></div>
+</p>
+
+<p><div><script src='https://gist.github.com/5163936.js?file=map.py'></script>
+<noscript><pre><code>[i**2 for i in range(1,100)]
+
+map(lambda x: x**2,list(range(1,100)))</code></pre></noscript></div>
+</p>
+
+<p><div><script src='https://gist.github.com/5163936.js?file=map.hs'></script>
+<noscript><pre><code>[x^2|x&lt;-[1..100]]</code></pre></noscript></div>
+</p>
+
+<p>My personal take would be something like Ruby> Scala > Python == Haskell.</p>
+]]></content>
+  </entry>
+  
+</feed>
